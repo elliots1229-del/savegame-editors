@@ -158,13 +158,13 @@ SavegameEditor={
 	_getItemMaximumQuantity:function(itemId){
 		var cat=this._getItemCategory(itemId);
 		if(itemId.endsWith('Arrow') || itemId.endsWith('Arrow_A') || cat==='materials' || cat==='food'){
-			return 65535;
+		return 65535;
 		}else if(cat==='weapons' || cat==='bows' || cat==='shields'){
-			return 1;
+		return 1;
 		}else if(itemId==='Obj_DungeonClearSeal'){
-			return 120
+			return 120;
 		}else if(itemId==='Obj_KorokNuts'){
-			return 900
+			return 900;
 		}else{
 			return 0xffffffff;
 		}
