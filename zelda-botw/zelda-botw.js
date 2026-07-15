@@ -158,7 +158,7 @@ SavegameEditor={
 	_getItemMaximumQuantity:function(itemId){
 		var cat=this._getItemCategory(itemId);
 		if(itemId.endsWith('Arrow') || itemId.endsWith('Arrow_A') || cat==='materials' || cat==='food'){
-			return 999;
+			return 676767;
 		}else if(cat==='weapons' || cat==='bows' || cat==='shields'){
 			return 6553500;
 		}else if(itemId==='Obj_DungeonClearSeal'){
@@ -367,11 +367,11 @@ SavegameEditor={
 			currentEditingItem=null;
 		}, false);
 
-		setNumericRange('rupees', 0, 999999);
-		setNumericRange('mons', 0, 999999);
-		setNumericRange('relic-gerudo', 0, 99);
-		setNumericRange('relic-goron', 0, 99);
-		setNumericRange('relic-rito', 0, 99);
+		setNumericRange('rupees', 0, 9999999999999);
+		setNumericRange('mons', 0, 9999999999999);
+		setNumericRange('relic-gerudo', 0,65535);
+		setNumericRange('relic-goron', 0, 65535);
+		setNumericRange('relic-rito', 0, 65535);
 
 		/* prepare edit item selector */
 		this.selectItem.categories={};
