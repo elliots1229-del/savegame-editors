@@ -160,7 +160,7 @@ SavegameEditor={
 		if(itemId.endsWith('Arrow') || itemId.endsWith('Arrow_A') || cat==='materials' || cat==='food'){
 			return 65535;
 		}else if(cat==='weapons' || cat==='bows' || cat==='shields'){
-			return 6553500;
+			return 1;
 		}else if(itemId==='Obj_DungeonClearSeal'){
 			return 120
 		}else if(itemId==='Obj_KorokNuts'){
